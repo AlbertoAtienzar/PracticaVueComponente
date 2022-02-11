@@ -8,7 +8,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <!-- Bootstrap CSS -->
+        
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     </head>
 
@@ -43,12 +43,8 @@
 
 
 
-        <!-- Plantilla para el componente edit-form -->
+        
         <script type="text/x-template" id="editForm">
-
-            <!--
-                 TODO: Componente edit-form
-            -->
             <div class="card-group"> 
                 <div class="card shadow text-center">               
                     <div class="card-body">
@@ -65,21 +61,14 @@
                                 v-bind:id="nota.name+indice" 
                                 v-model="nota.value"></textarea>
                         </dl>
-                        <input type="button" v-on:click="closeForm(indice)" value="Cerrar" class="btn btn-primary" style="color:#fff">
+                        <input type="button" v-on:click="closeForm(indice)" value="Close" class="btn btn-primary" style="color:#fff">
                     </div> 
                 </div>               
             </div>
 
         </script>
 
-
-
-        <!-- Plantilla para el componente item-data -->
         <script type="text/x-template" id="itemData">
-
-            <!--
-                 TODO: Componente item-data
-            -->
             <div class="card-group">
                 <div class="card shadow text-center">
                     <div class="card-body">
@@ -92,15 +81,12 @@
                             </dd>
                         </dl>
                         <a v-bind:href="pelicula.href" class="btn btn-primary">Ver</a>
-                        <input type="button" value="Editar" v-on:click="toggleEditFormVisibility(indice)" class="btn btn-secondary" style="color:#fff">
+                        <input type="button" value="Edit" v-on:click="toggleEditFormVisibility(indice)" class="btn btn-secondary" style="color:#fff">
                     </div>                    
                 </div>
             </div>
 
         </script>
-
-
-        <!-- TODO: Cargar librería VueJS y archivo js/script.js -->
         <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
         <script src="./js/script.js"></script>
         <!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

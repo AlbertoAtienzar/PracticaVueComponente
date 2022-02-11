@@ -40,7 +40,6 @@ var server_data = {
 
 var peliculasEditar = [];
 
-// TODO: Componente edit-form
 Vue.component('edit-form', {
     template: '#editForm',
     props:['pelicula', 'indice'],
@@ -53,7 +52,6 @@ Vue.component('edit-form', {
     }
 })
 
-// TODO: Componente item-data
 Vue.component('item-data', {    
     template: '#itemData',  
     props: ['pelicula', 'indice'],
@@ -66,8 +64,6 @@ Vue.component('item-data', {
     }   
 })
 
-// Aplicación VueJS
-// La aplicación recibe los datos en la variable de datos "col"
 var app = new Vue({
     el: '#app',
     data: {
